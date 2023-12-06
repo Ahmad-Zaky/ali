@@ -15,7 +15,13 @@
 			height: 100%;
 			margin: 0%;
 		}
-
+		
+		.container {		
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
 		.primary-font-size {
 			font-size: 0.6cm;
 		}
@@ -24,23 +30,61 @@
 			color: #af8868;
 		}
 
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
 		.center {
 			text-align: center;
-		} 
+		}
+		
+		.w-100 {
+			width: 100%
+		}
+		
+		.h-100 {
+			height: 100%
+		}
+		
+		.sheet {
+			width: 800px;
+			height: 700px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.sheet {
+				width: 700px;
+				height: 700px;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sheet {
+				width: 600px;
+				height: 600px;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.sheet {
+				width: 500px;
+				height: 500px;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.sheet {
+				width: 100%;
+				height: 100%;
+			}
+		}
 	</style>
 </head>
 <body>
-	<div class="primary-color primary-font-size">
-		<h1 class="center">Ali Qur'an Follow up</h1>
-		<h1 class="center">
-			<a href="https://docs.google.com/spreadsheets/d/1_bjr94JBA7CPzfJjsRRuGkBdsVZc1nIr6khTQGU1kDE/edit?usp=sharing" style="text-decoration:none" class="primary-color" target="_blank">8</a>
-		</h1>
+	<div class="container h-100">
+		<div class="primary-color primary-font-size">
+			<h1 class="center">Ali Qur'an Follow up</h1>
+			<h1 class="center">
+				<a href="https://docs.google.com/spreadsheets/d/1_bjr94JBA7CPzfJjsRRuGkBdsVZc1nIr6khTQGU1kDE/edit?usp=sharing" style="text-decoration:none" class="primary-color" target="_blank">8</a>
+			</h1>
+			<iframe class="sheet w-100 h-100" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgDoQ9p77VtPmQ24eSStbwnJIuwB4zaYH8_s37e4Z7uQxGunOJ-S7rbxwxamk2xzH0Kna619asQaEV/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+		</div>
 	</div>
 </body>
 </html>
